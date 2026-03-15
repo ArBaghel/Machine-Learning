@@ -163,7 +163,7 @@ def get_accuracy():
     from sklearn.metrics import accuracy_score
     iris = load_iris()
     X, y = iris.data, iris.target
-    _, X_test, _, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+    _, X_test, _, y_test = train_test_split(X, y, test_size=0.33)
     mdl = load_model()
     return round(accuracy_score(y_test, mdl.predict(X_test)) * 100, 2)
 
