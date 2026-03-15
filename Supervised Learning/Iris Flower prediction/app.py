@@ -156,6 +156,7 @@ def load_model():
     with open(model_path, 'rb') as f:
         return pickle.load(f)
 
+# REMOVE this entire function
 @st.cache_data
 def get_accuracy():
     from sklearn.model_selection import train_test_split
@@ -165,6 +166,8 @@ def get_accuracy():
     _, X_test, _, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
     mdl = load_model()
     return round(accuracy_score(y_test, mdl.predict(X_test)) * 100, 2)
+
+accuracy = get_accuracy()
 
 model     = load_model()
 clf       = model.named_steps['classifier']
