@@ -159,13 +159,12 @@ def load_model():
 # REMOVE this entire function
 @st.cache_data
 def get_accuracy():
-    from sklearn.model_selection import train_test_split
     from sklearn.metrics import accuracy_score
-    iris = load_iris()
-    X, y = iris.data, iris.target
-    _, X_test, _, y_test = train_test_split(X, y, test_size=0.33)
+    test_path = os.path.join(os.path.dirname(__file__), 'iris_test_data.pkl')
+    with open(test_path, 'rb') as f:
+        data = pickle.load(f)
     mdl = load_model()
-    return round(accuracy_score(y_test, mdl.predict(X_test)) * 100, 2)
+    return round(accuracy_score(data['Y_test'], mdl.predict(data['X_test'])) * 100, 2)
 
 accuracy = get_accuracy()
 
