@@ -6,7 +6,7 @@ A machine learning web application that classifies Iris flower species based on 
 
 ## Live Demo
 
-[View Deployed Application](https://iris-flower-predictor.streamlit.app)
+[View Deployed Application](https://machine-learning-iris-flower-prediction.streamlit.app)
 
 ---
 
