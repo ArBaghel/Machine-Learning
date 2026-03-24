@@ -193,10 +193,8 @@ st.markdown("""
 # ── Load Model ─────────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    model_path = "admission_model.pkl"
-    if not os.path.exists(model_path):
-        # fallback to uploaded path
-        model_path = "/mnt/user-data/uploads/1774380571175_admission_model.pkl"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(base_dir, "admission_model.pkl")
     with open(model_path, "rb") as f:
         return pickle.load(f)
 
