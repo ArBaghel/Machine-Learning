@@ -11,7 +11,7 @@ A machine learning web application that predicts whether a graduate school appli
 
 ## 🚀 Live Demo
 
-🔗 **[Graduate Admission Predictor · Streamlit](https://arbaghel-machine-learning-supervised-learninggraduate-admi-xyze4s.streamlit.app/)**
+🔗 **[Graduate Admission Predictor · Streamlit](https://graduate-admit-predictor.streamlit.app/)**
 
 ---
 
