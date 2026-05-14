@@ -9,13 +9,13 @@ A machine learning web application that predicts whether a graduate school appli
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 🔗 **[Graduate Admission Predictor · Streamlit](https://machine-learning-admission-prediction.streamlit.app/)**
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Dataset](#dataset)
@@ -76,12 +76,12 @@ df['Admit'] = (df['Chance of Admit'] >= 0.75).astype(int)
 
 The Streamlit app provides:
 
-- 🎛️ **Interactive input controls** — sliders, select sliders, and radio buttons for all 8 features
-- 🤖 **Model info banner** — displays algorithm name, hyperparameters, search strategy, and accuracy
-- ✅ **Admission verdict** — clear Admitted / Rejected result card
-- 📊 **Dual confidence meters** — visual probability bars for both admission and rejection
-- 📈 **Stats panel** — admit probability %, confidence level, model accuracy, algorithm name
-- 💡 **Personalised improvement tips** — actionable suggestions when profile is weak
+-  **Interactive input controls** — sliders, select sliders, and radio buttons for all 8 features
+-  **Model info banner** — displays algorithm name, hyperparameters, search strategy, and accuracy
+-  **Admission verdict** — clear Admitted / Rejected result card
+-  **Dual confidence meters** — visual probability bars for both admission and rejection
+-  **Stats panel** — admit probability %, confidence level, model accuracy, algorithm name
+-  **Personalised improvement tips** — actionable suggestions when profile is weak
 
 ---
 
@@ -250,7 +250,7 @@ pandas
 seaborn
 ```
 
-> ⚠️ The `scikit-learn==1.6.1` version pin is required — the model was serialised with this version. Using a newer version may cause unpickling warnings or errors.
+>  The `scikit-learn==1.6.1` version pin is required — the model was serialised with this version. Using a newer version may cause unpickling warnings or errors.
 
 ### Streamlit Cloud Deploy Settings
 
